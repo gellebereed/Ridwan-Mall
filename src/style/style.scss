@@ -4,7 +4,7 @@ $seconadryColor: #e6ebf0;
 $bg-color: #00919eb2;
 $hr-color: #70707067;
 $h2-location-color: #7b3232;
-$icon-color: #162447c7;
+$icon-color: #1b1b2f;
 $transparentColor: rgba(0, 0, 0, 0.507);
 
 body {
@@ -59,7 +59,7 @@ hr {
 }
 
 .hide {
-	visibility: hidden;
+	opacity: 0;
 }
 .active-link {
 	border-bottom: 3px solid $bg-color;
@@ -110,6 +110,7 @@ hr {
 		width: 40%;
 		color: $seconadryColor;
 		letter-spacing: 2px;
+		text-align: left;
 
 		h1 {
 			font-size: 2rem;
@@ -276,6 +277,7 @@ hr {
 			border-radius: 5px;
 			cursor: pointer;
 			margin: auto;
+			transition: ease-in-out 0.8s;
 
 			.detail-box {
 				background: rgba(0, 0, 0, 0.534);

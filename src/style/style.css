@@ -61,7 +61,7 @@ hr {
 }
 
 .hide {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .active-link {
@@ -114,6 +114,7 @@ hr {
   width: 40%;
   color: #e6ebf0;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 #hero .float-content h1 {
@@ -265,7 +266,7 @@ hr {
 
 #services .service-wrap .services-col .service-item i {
   font-size: 3rem;
-  color: #162447c7;
+  color: #1b1b2f;
 }
 
 #services .service-wrap hr {
@@ -296,6 +297,8 @@ hr {
   border-radius: 5px;
   cursor: pointer;
   margin: auto;
+  -webkit-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
 }
 
 #shops .shop-wrap .brands .detail-box {
