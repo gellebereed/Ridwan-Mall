@@ -1,0 +1,27 @@
+{
+	"name": "ridwan-mall",
+	"version": "1.0.0",
+	"description": "Ridwan Shopping Center",
+	"main": "script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gellebereed/Ridwan-Mall.git"
+	},
+	"keywords": [
+		"ridwan",
+		"mall",
+		"mall",
+		"shopping",
+		"Center"
+	],
+	"author": "Abdirahman Hassan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gellebereed/Ridwan-Mall/issues"
+	},
+	"homepage": "https://github.com/gellebereed/Ridwan-Mall#readme",
+	"dependencies": {}
+}
