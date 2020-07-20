@@ -1,5 +1,5 @@
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', san-serif;
   word-spacing: .025em;
   letter-spacing: 0.1em;
 }
@@ -52,6 +52,14 @@ hr {
   border-radius: 5px;
 }
 
+.weavy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .mr-0 {
   margin-right: 0;
 }
@@ -69,22 +77,23 @@ hr {
   margin: 0 5px;
 }
 
-.nav .link-design {
+.link-design {
   padding: 0 10px;
   font-size: 1.1rem;
 }
 
-.nav .link-design:hover {
+.link-design:hover {
   color: #142850;
 }
 
-.nav .navbar-brand {
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
-.nav .navbar-brand span {
+.navbar-brand span {
   display: block;
   text-align: center;
   font-size: 0.8rem;

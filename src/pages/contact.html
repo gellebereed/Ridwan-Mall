@@ -18,7 +18,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="../style/style.css">
-        <link rel="stylesheet" href="../style/gallery.css">
+        <link rel="stylesheet" href="../style/contact.css">
 
         <script>
             ScrollReveal({ reset: false });
@@ -44,10 +44,10 @@
                         <li class="nav-item">
                             <a class="nav-link link-design text-white" href="about.html">About</a>
                         </li>
-                        <li class="nav-item active-link">
+                        <li class="nav-item">
                             <a class="nav-link link-design text-white" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item active-link">
                             <a class="nav-link link-design text-white " href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -55,52 +55,39 @@
             </div>
         </nav>
 
-        <!-- Gallery Section -->
-        <section id="gallery">
+        <!-- contact form -->
+        <section id="contact">
             <div class="weavy">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#142850" fill-opacity="0.09" d="M0,128L26.7,144C53.3,160,107,192,160,176C213.3,160,267,96,320,106.7C373.3,117,427,203,480,197.3C533.3,192,587,96,640,85.3C693.3,75,747,149,800,186.7C853.3,224,907,224,960,213.3C1013.3,203,1067,181,1120,160C1173.3,139,1227,117,1280,138.7C1333.3,160,1387,224,1413,256L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
             </div>
-            <div class="content container">
+            <div class="content container jumbotron">
                 <div class="hr-tittle">
                     <hr class="mr-0">
-                    <h1>Gallery</h1>
+                    <h1>Contact Us</h1>
                     <hr class="ml-0">
                 </div>
     
-                <div class="images-wrap">
-                    <div class="image">
-                        <img src="../assets/img/ridwanMall_Img.jpeg" alt="">
+                <div class="subtittle">
+                    <h2>HAVE SOME QUESTIONS?</h2>
+                </div>
+    
+                <div class="contact-wrap">
+                    <div class="mail-icon">
+                        <i class="fas fa-envelope-open-text"></i>
                     </div>
-                    <div class="image">
-                        <img src="../assets/img/ridwanMall_Img2.jpeg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/ridwanMall_Img3.jpeg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/gallery_1.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/gallery_2.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/gallery_3.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/gallery_4.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/land.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/parking.jpg" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="../assets/img/shops.jpg" alt="">
-                    </div>
+                    <form action="contact.html" method="get">
+                        <input type="text" id="firstName" placeholder="First Name" class="border-oval">
+                        <input type="text" id="lastName" placeholder="Last Name" class="border-oval">
+                        <input type="email" name="email" id="email" placeholder="What's your email?" class="border-oval">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your questions ...."></textarea>
+    
+                        <button class="btn btn-lg border-oval">Send Message</button>
+                    </form>
                 </div>
             </div>
+
         </section>
+
 
         <!-- Footer -->
 

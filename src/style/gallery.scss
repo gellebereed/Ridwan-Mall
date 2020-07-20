@@ -1,33 +1,38 @@
 // Gallery Section
 #gallery {
-	margin: 50px auto;
+	position: relative;
+	margin-top: 0;
 
-	.hr-tittle {
-		margin-bottom: 20px;
-	}
-	.images-wrap {
-		display: grid;
-		gap: 20px;
-		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-		// margin: auto;
+	.content {
+		// margin: 50px auto;
 
-		.image {
-			height: 400px;
-			cursor: pointer;
-			transition: ease-in-out 1s;
-			// box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-			box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-				0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-				0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-			border-radius: 5px;
-			&:hover {
-				transform: scale(1.07);
-			}
+		.hr-tittle {
+			margin-bottom: 20px;
+			font-size: 3rem;
+			padding: 50px 0;
+		}
+		.images-wrap {
+			display: grid;
+			gap: 20px;
+			grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 
-			img {
-				width: 100%;
-				height: 100%;
+			.image {
+				height: 400px;
+				cursor: pointer;
+				transition: ease-in-out 1s;
+				box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+					0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+					0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 				border-radius: 5px;
+				&:hover {
+					transform: scale(1.07);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 5px;
+				}
 			}
 		}
 	}

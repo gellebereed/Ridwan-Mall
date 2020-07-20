@@ -1,0 +1,106 @@
+// Contact Form
+#contact {
+	position: relative;
+	text-align: center;
+
+	.subtittle {
+		margin-top: 30px;
+		color: #142850;
+	}
+	.hr-tittle {
+		// margin-top: 50px;
+		color: #142850;
+	}
+
+	.jumbotron {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	.content {
+		.contact-wrap {
+			display: grid;
+			gap: 10px;
+			grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+			margin-top: 100px;
+
+			.mail-icon {
+				margin: auto;
+				margin: 20px auto;
+				i {
+					font-size: 15rem;
+					color: #142850;
+				}
+			}
+
+			form {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+
+				.border-oval {
+					width: 400px;
+					padding: 10px 20px;
+					margin: 10px auto;
+					border: 1px solid rgb(165, 165, 165);
+					border-radius: 40px;
+
+					&:focus {
+						outline: none;
+						border-color: #142850;
+					}
+				}
+
+				textarea {
+					width: 400px;
+					height: 100px;
+					border: 1px solid rgb(165, 165, 165);
+					border-radius: 20px;
+					padding: 10px 20px;
+					resize: none;
+
+					&:focus {
+						outline: none;
+						border-color: #142850;
+					}
+				}
+
+				.btn {
+					text-transform: uppercase;
+					background-color: #142850;
+					color: white;
+
+					&:hover,
+					&:focus {
+						background-color: #3f3f8a;
+						// color: #142850;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Media Queries
+
+// screen lg
+@media only screen and (max-width: 1100px) {
+}
+// screen md
+@media only screen and (max-width: 990px) {
+	#contact {
+		.subtittle,
+		.hr-tittle {
+			margin-top: 30px;
+			color: black;
+		}
+	}
+}
+// screen sm
+@media only screen and (max-width: 760px) {
+}
+// screen extra sm
+@media only screen and (max-width: 570px) {
+}
+// screen extra extra sm
+@media only screen and (max-width: 500px) {
+}

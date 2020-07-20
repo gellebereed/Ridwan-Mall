@@ -8,7 +8,7 @@ $icon-color: #1b1b2f;
 $transparentColor: rgba(0, 0, 0, 0.507);
 
 body {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', san-serif;
 	word-spacing: .025em;
 	letter-spacing: 0.1em;
 }
@@ -50,6 +50,13 @@ hr {
 	z-index: 7;
 	border-radius: 5px;
 }
+.weavy {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+}
 
 .mr-0 {
 	margin-right: 0;
@@ -67,24 +74,23 @@ hr {
 }
 // Nav Bar
 
-.nav {
-	.link-design {
-		padding: 0 10px;
-		font-size: 1.1rem;
-		&:hover {
-			color: $primaryColor;
-		}
+.link-design {
+	padding: 0 10px;
+	font-size: 1.1rem;
+	&:hover {
+		color: $primaryColor;
 	}
+}
 
-	.navbar-brand {
-		font-size: 1.2rem;
-		font-weight: bold;
-		font-style: italic;
-		span {
-			display: block;
-			text-align: center;
-			font-size: 0.8rem;
-		}
+.navbar-brand {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	font-style: italic;
+	span {
+		display: block;
+		text-align: center;
+		font-size: 0.8rem;
 	}
 }
 
