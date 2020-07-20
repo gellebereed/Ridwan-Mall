@@ -1,0 +1,26 @@
+#about {
+  color: #142850;
+}
+
+#about .content {
+  margin-top: 50px;
+}
+
+#about .content .about-wrap {
+  display: -ms-grid;
+  display: grid;
+  gap: 10;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin: 50px auto;
+}
+
+#about .content .about-wrap .col p {
+  color: #142850ce;
+}
+
+#about .content .about-wrap .col img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=about.css.map */

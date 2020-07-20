@@ -1,0 +1,24 @@
+// about section
+#about {
+	color: #142850;
+	.content {
+		margin-top: 50px;
+		.about-wrap {
+			display: grid;
+			gap: 10;
+			grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+			margin: 50px auto;
+
+			.col {
+				p {
+					color: #142850ce;
+				}
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
