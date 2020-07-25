@@ -103,4 +103,28 @@
 }
 // screen extra extra sm
 @media only screen and (max-width: 500px) {
+	#contact {
+		.content {
+			.contact-wrap {
+				grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+				margin-top: 50px;
+
+				.mail-icon {
+					i {
+						font-size: 5rem;
+					}
+				}
+
+				form {
+					.border-oval {
+						width: 300px;
+					}
+
+					textarea {
+						width: 300px;
+					}
+				}
+			}
+		}
+	}
 }

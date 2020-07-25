@@ -125,7 +125,7 @@ hr {
 }
 
 #hero #carouselExampleSlidesOnly {
-  height: 90vh;
+  height: 100vh;
 }
 
 #hero #carouselExampleSlidesOnly .carousel-inner {
@@ -138,9 +138,19 @@ hr {
   height: 100%;
 }
 
-#hero #carouselExampleSlidesOnly .carousel-inner .carousel-item img {
-  width: 100%;
-  height: 100%;
+#hero #carouselExampleSlidesOnly .carousel-inner .img-1 {
+  background: url(../assets/img/ridwanMall_Img.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+#hero #carouselExampleSlidesOnly .carousel-inner .img-2 {
+  background: url(../assets/img/ridwanMall_Img2.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+#hero #carouselExampleSlidesOnly .carousel-inner .img-3 {
+  background: url(../assets/img/ridwanMall_Img3.jpeg) no-repeat center center;
+  background-size: cover;
 }
 
 #hero .float-content {
@@ -456,12 +466,9 @@ hr {
 #events .events-wrap .event .event-img {
   margin: 0;
   height: 300px;
-}
-
-#events .events-wrap .event .event-img img {
   width: 100%;
-  height: 100%;
   padding-right: 20px;
+  border-radius: 10px;
 }
 
 #events .events-wrap .event h2 {
@@ -472,6 +479,16 @@ hr {
 #events .events-wrap .event .date {
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.507);
+}
+
+#events .events-wrap .event-1 .event-img {
+  background: url(../assets/img/grandOpening.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#events .events-wrap .event-2 .event-img {
+  background: url(../assets/img/eid.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 footer {
@@ -609,15 +626,118 @@ footer .mini-container .col input ::-ms-input-placeholder {
 }
 
 @media only screen and (max-width: 500px) {
+  #hero #carouselExampleSlidesOnly {
+    height: 100vh;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-1 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-2 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-3 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
   #hero .float-content {
     left: 10%;
-    top: 5%;
+    top: 10%;
+    background-color: #00919eb2;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  #hero .float-content h1 {
+    font-size: 1.5rem;
+  }
+  #hero .float-content span {
+    font-size: 2rem;
+  }
+  #hero .float-content p {
+    color: white;
+    font-weight: 500;
+  }
+  #hero .float-content .notification-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+  }
+  #welcome .welcome-content {
+    -ms-grid-columns: (minmax(340px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   }
   #welcome .welcome-content .right-side {
     margin-left: 0;
   }
   #welcome .welcome-content .right-side .box-container {
     border-radius: 5px;
+  }
+  #events .events-wrap {
+    -ms-grid-columns: (minmax(340px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #hero #carouselExampleSlidesOnly {
+    height: 100vh;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-1 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-2 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
+  #hero #carouselExampleSlidesOnly .carousel-inner .img-3 {
+    background-size: 600px 850px;
+    background-position: 30% 40%;
+  }
+  #hero .float-content {
+    left: 10%;
+    top: 10%;
+    background-color: #00919eb2;
+    color: white;
+    letter-spacing: 0.6px;
+    text-align: left;
+  }
+  #hero .float-content h1 {
+    font-size: 1rem;
+  }
+  #hero .float-content span {
+    font-size: 1.5rem;
+  }
+  #hero .float-content p {
+    color: white;
+    font-weight: 500;
+  }
+  #hero .float-content .notification-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+  }
+  #welcome .welcome-content {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  #welcome .welcome-content .right-side {
+    margin-left: 0;
+  }
+  #welcome .welcome-content .right-side .box-container {
+    border-radius: 5px;
+  }
+  #services .service-wrap .services-col {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  #events .events-wrap {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 /*# sourceMappingURL=style.css.map */

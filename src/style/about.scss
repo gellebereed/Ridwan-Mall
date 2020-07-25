@@ -41,3 +41,14 @@
 		}
 	}
 }
+
+// Media Queries
+@media only screen and (max-width: 500px) {
+	#about {
+		.content {
+			.about-wrap {
+				grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+			}
+		}
+	}
+}

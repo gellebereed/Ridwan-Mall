@@ -95,4 +95,21 @@
     color: black;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  #contact .content .contact-wrap {
+    -ms-grid-columns: (minmax(340px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    margin-top: 50px;
+  }
+  #contact .content .contact-wrap .mail-icon i {
+    font-size: 5rem;
+  }
+  #contact .content .contact-wrap form .border-oval {
+    width: 300px;
+  }
+  #contact .content .contact-wrap form textarea {
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

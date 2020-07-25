@@ -35,4 +35,11 @@
   border-radius: 50%;
   padding: 25px;
 }
+
+@media only screen and (max-width: 500px) {
+  #about .content .about-wrap {
+    -ms-grid-columns: (minmax(340px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
 /*# sourceMappingURL=about.css.map */

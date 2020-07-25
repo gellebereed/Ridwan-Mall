@@ -1,12 +1,7 @@
-const detail = document.querySelectorAll('.detail-box');
+$('.detail-box').mouseover(function() {
+	$(this).removeClass('hide').parent().css('transform', 'scale(1.06)');
+});
 
-detail.forEach((element) => {
-	element.addEventListener('mouseover', () => {
-		element.classList.remove('hide');
-		element.parentNode.style.transform = 'scale(1.06)';
-	});
-	element.addEventListener('mouseout', () => {
-		element.classList.add('hide');
-		element.parentNode.style.transform = 'scale(1)';
-	});
+$('.detail-box').mouseout(function() {
+	$(this).addClass('hide').parent().css('transform', 'scale(1)');
 });
